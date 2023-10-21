@@ -68,7 +68,7 @@
         <div class="utility-bar__content-left">
           {% if section.settings.menu != blank %}
             {% for link in linklists[section.settings.menu].links %}
-              <a href="{{ link.url }}" class="utility-bar__menu-link" onClick="alert({{ link.title|json }})">{{ link.title }}</a>
+              <a href="{{ link.url }}" class="utility-bar__menu-link">{{ link.title }}</a>
             {% endfor %}
           {% endif %}
 
